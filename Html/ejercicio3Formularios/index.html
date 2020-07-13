@@ -1,0 +1,213 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+
+
+    <style>
+        .center {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+    <img class="center" src="../../contenido/unnamed.jpg" width="450" height="98" />
+
+    <h1>Formulario para entrada sin validacion </h1>
+    <form action="./respuestaFormularios.html" method="GET">
+
+        <ul>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="apellido"> Apellido: </label> <br />
+                <input title="ingrese su apellido" type="text" id="apellido" name="apellido" value=""
+                    autofocus="autofocus" />
+
+            </li>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Contraseña: </label> <br />
+
+                <input title="ingrese contraseña" type="password" id="apellido" name="contraseña" value="" />
+
+            </li>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Oculto: </label> <br />
+
+                <input type="hidden" id="apellido" name="contraseña" value="" autofocus="autofocus" />
+
+            </li>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Campo deshabilitado: </label> <br />
+
+                <input title="campo deshabilitado" type="text" id="valor deshabilitado" name="valor deshabilitado"
+                    placeholder="valor deshabilitado" disabled>
+
+            </li>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Campo de solo lectura: </label> <br />
+
+                <input title="campo de solo lectura" type="text" id="campo deshabilitado" name="campo deshabilitado"
+                    placeholder="campo solo lectura" readonly>
+
+            </li>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Practica deportes </label> <br />
+
+                <input type="checkbox" id="cbox2" value="second_checkbox">
+
+            </li>
+
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Practica musica </label> <br />
+
+                <input type="checkbox" id="cbox2" value="second_checkbox">
+
+            </li>
+
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Practica pinturas </label> <br />
+
+                <input type="checkbox" id="cbox2" value="second_checkbox">
+
+            </li>
+
+
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Sexo </label> <br />
+
+                <label for="male">Femenino</label><input type="radio" id="male" name="geneno" value="Femenino">
+
+                <label for="female">Masculino</label><input type="radio" id="female" name="genero" value="Masculino">
+
+            </li>
+
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Estudios Cursados </label> <br />
+                <select id="cars" name="carlist" form="carform">
+                    <option value="volvo">Primario</option>
+                    <option value="saab">Secundario</option>
+                    <option value="opel">Terciario</option>
+                    <option value="audi">Universitario</option>
+                </select>
+
+            </li>
+
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña">Fecha y Hora </label> <br />
+                <input type="date" id="birthdaytime" name="birthdaytime">
+                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+
+            </li>
+
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Color </label> <br />
+                <input type="color">
+
+
+            </li>
+            <li style="margin-top:10px">
+                <input type="submit" value="Enviar formulario sin validacion">
+
+            </li>
+
+            <li style="margin-top:10px">
+                <input type="reset" value="Reset a valores a valores predeterminados">
+
+            </li>
+        </ul>
+    </form>
+
+
+
+
+    <h1>Formulario para entrada con validacion </h1>
+    <form action="./respuestaFormularios.html" method="GET">
+
+        <ul>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="Comentario"> Comentario (validacion por requerido): </label>
+                <br />
+                <input type="text" name="Comentario" required=required />
+
+            </li>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Email con doble validacion (x@x y required): </label>
+                <br />
+
+                <input type="email" name="user-email" placeholder="texto@texto" required=required />
+
+            </li>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Numero entero limitado (validacion por tipo numerico
+                    y cotas): </label> <br />
+
+                <input type="number" min="1" max="5" name="numeroEntero" required=required />
+
+            </li>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña">Numero decimal</label> <br />
+
+                <input type="number" min="0" max="9" name="numeroReal" step="0.1" required=required />
+
+            </li>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña">URL (validacion por requerido, escribe http) </label>
+                <br />
+
+                <input type="url" name="sitio" placeholder="http://xxx" required=required />
+            </li>
+
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Pattern de validacion </label> <br />
+
+                <input type="text" pattern="[a-z]{3}[1-2]{2}" name="mascara"
+                    title=" 3 letrasy dos numerosque sean1 o 2 solamente" required=required />
+            </li>
+            <li style="margin-top:10px">
+                <label style="font-weight: bold" for="contraseña"> Pattern de validacion </label> <br />
+
+                <input type="text" pattern="[a-z]{3}[1-2]{2}" name="mascara"
+                    title="3 letrasy dos numerosque sean1 o 2 solamente" placeholder="+(54) 11 23456788"
+                    required=required />
+            </li>
+
+            <li style="margin-top:10px">
+                <input type="submit" value="Enviar formulario con validacion">
+
+            </li>
+
+            <li style="margin-top:10px">
+                <input type="reset" value="Reset a valores predeterminados">
+
+            </li>
+        </ul>
+    </form>
+
+
+    <br />
+    <input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+    <br />
+    <br />
+
+    <footer>
+
+        Gessica Paniagua
+        <br />
+        <a href="mailto:gessi.paniagua@gmail.com">gessi.paniagua@gmail.com</a>
+
+        <br />
+
+        <p>Copyright 2020 by <a target="_blank" href="https://github.com/gpani">@gpani</a></p>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+button#variableIncorrecta{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 1px solid ;
+}
+
+button#variableCorrecta{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: rosybrown;
+    border-radius: 6px;
+    border: 1px solid ;
+}
+
+button#muestraVariableGlobal{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: rgb(161, 188, 143);
+    border-radius: 6px;
+    border: 1px solid ;
+}
+
+.padre {
+    /* IMPORTANTE */
+    text-align: center;
+}

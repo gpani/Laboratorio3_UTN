@@ -1,0 +1,172 @@
+{
+    "datos": [
+        {
+            "codArt": "codigo01",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 104
+        },
+        {
+            "codArt": "codigo02",
+            "familia": "Alimento balanceado premium",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 100
+        },
+        {
+            "codArt": "codigo03",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 12
+        },
+        {
+            "codArt": "codigo04",
+            "familia": "Alimento balanceado premium",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 1312
+        },
+        {
+            "codArt": "codigo05",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 655
+        },
+        {
+            "codArt": "codigo06",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 32
+        },
+        {
+            "codArt": "codigo07",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 86
+        },
+        {
+            "codArt": "codigo08",
+            "familia": "Alimento balanceado premium",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 236
+        },
+        {
+            "codArt": "codigo09",
+            "familia": "Galletitas",
+            "um": "kg",
+            "descripcion": "don satur",
+            "fechaAlta": "21/08/2017",
+            "saldoStock": 984
+        },
+        {
+            "codArt": "codigo10",
+            "familia": "Elementos de limpieza",
+            "um": "lt",
+            "descripcion": "Limpiador de piso",
+            "fechaAlta": "12/05/2019",
+            "saldoStock": 420
+        },
+        {
+            "codArt": "codigo11",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 234
+        },
+        {
+            "codArt": "codigo12",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 23
+        },
+        {
+            "codArt": "codigo13",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 10
+        },
+        {
+            "codArt": "codigo14",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 10
+        },
+        {
+            "codArt": "codigo15",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 2346
+        },
+        {
+            "codArt": "codigo16",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 10
+        },
+        {
+            "codArt": "codigo17",
+            "familia": "Galletitas",
+            "um": "kg",
+            "descripcion": "rumba por kilo",
+            "fechaAlta": "10/08/2010",
+            "saldoStock": 32
+        },
+        {
+            "codArt": "codigo18",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 112
+        },
+        {
+            "codArt": "codigo19",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 10
+        },
+        {
+            "codArt": "codigo20",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 10
+        },
+        {
+            "codArt": "codigo21",
+            "familia": "Alimento balanceado",
+            "um": "kg",
+            "descripcion": "bolsa de alimento",
+            "fechaAlta": "20/06/2019",
+            "saldoStock": 876
+        }
+    ]
+}

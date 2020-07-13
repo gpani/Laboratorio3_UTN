@@ -1,0 +1,48 @@
+
+
+.padre {
+    /* IMPORTANTE */
+   
+    background-color: #51d6ae;
+    width: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 5%;
+    
+    
+}
+
+
+.divCenter{
+    text-align: center;
+}
+
+.longInput {
+    font-size: 20px;
+    
+}
+
+.h1Text  {
+    
+    margin-left: 2%;
+}
+
+
+.textCenter{
+    text-align: left;
+    margin-left: 2%;
+   
+}
+
+.colorbtn{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #c295c8;
+    border-radius: 3px;
+    border: 1px solid ;
+}
+

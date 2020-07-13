@@ -1,0 +1,93 @@
+h1#titleText{
+    text-align:left;
+    text-align:left;
+    font-size: 30px;
+    color:darkblue;
+    text-align:center      
+ }
+p#text{
+         text-align:left;
+         font-size:18px;
+         color:blue;
+         font-style: italic;
+         border-top-style:solid;
+         border-bottom-style:solid;
+         border-width:thin;
+         border-color:blue; /* Comentarios dentro de la
+         definición de estilos*/
+}
+div#estiloA{
+    background-color:lightblue;
+    width:50%;
+    margin:auto;
+}
+
+div#estiloB{
+    background-color:lightgreen;
+    width:50%;
+    padding-left:10%;
+    padding-right:10%;
+    margin:auto;
+}
+
+div#estiloC{
+    background-color:lightcoral;
+    width:50%;
+    padding-left:10%;
+    padding-right:10%;
+    box-sizing:border-box;
+    margin:auto;
+}
+.cuadrado {
+    width:20%;
+    height:40%;
+    padding-top:10;
+    margin:auto;
+    position:relative;
+    border-style:solid;
+    border-width:3px;
+    border-color:grey; 
+    background-color: lightblue;
+}
+
+/* 
+ejercicio 5 */
+.caja {
+    width: 80%;
+    height: 80%;
+    border-width:3px;
+    border-color:red; 
+    border-style:solid;
+    margin: auto;
+    border-radius: 20px 0 0 0 ;
+    position: relative;
+}
+
+.cajaFondo {
+    position: absolute;
+    background-image:url('../contenido/florCSS.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+    opacity: 0.3;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+}
+
+.cajaTexto {
+    position: absolute;
+    overflow-x: hidden; 
+    overflow-x: auto;
+    text-align:justify; 
+    margin: auto;
+    height: 100%;
+    z-index: 1;
+}
+
+p#sinmargin{
+    margin:0%;
+}

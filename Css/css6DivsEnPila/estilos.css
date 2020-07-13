@@ -1,0 +1,82 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#estiloA{
+    background-color:lightblue;
+    width:90%;
+    margin:auto;
+}
+
+div#estiloB{
+    background: linear-gradient(orange, white, pink);
+    width: 20%;
+    height: 20%;
+    border-width:1px;
+    border-color:black; 
+    border-style:solid;
+    margin: auto;
+    border-radius: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 5px #88888880;
+}
+
+div#estiloC{
+    background: radial-gradient(orange, white, pink);
+    width: 20%;
+    height: 20%;
+    border-width:1px;
+    border-color:black; 
+    border-style:solid;
+    margin: auto;
+    border-radius: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#estiloD{
+    background: linear-gradient(to top right,  orange, white, pink);
+    width: 20%;
+    height: 20%;
+    border-width:1px;
+    border-color:black; 
+    border-style:solid;
+    margin: auto;
+    border-radius: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img#estiloD{
+    max-width: 60%;
+    max-height: 60%;
+}
+
+div#estiloE{
+    background: linear-gradient(to top left,  orange, white, pink);
+    width: 20%;
+    height: 20%;
+    border-width:1px;
+    border-color:black; 
+    border-style:solid;
+    margin: auto;
+    border-radius: 10px ;
+    box-shadow: 10px 5px #88888880;
+}
+
+div#estiloF{
+    background: linear-gradient(to top right,  orange, white, pink);
+    width: 20%;
+    height: 20%;
+    border-width:1px;
+    border-color:black; 
+    border-style:solid;
+    margin: auto;
+    border-radius: 10px ;
+}

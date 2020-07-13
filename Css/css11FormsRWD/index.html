@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div id="fondo">
+        <div id="titulo">
+            <h1>Formulario</h1>
+        </div>
+        <form action="./respuesta.html" method="GET">
+            <div id="formulario">
+                <div id="campos">
+                    <div id="campo1">
+                        <div id="label">1. Apellido</div>
+                        <input id="apellido">
+                    </div>
+                    <div id="campo1">
+                        <div id="label">2. Nombre</div>
+                        <input id="nombre">
+                    </div>
+                    <div id="campo1">
+                        <div id="label">3. Contraseña</div>
+                        <input id="password" type="password">
+                    </div>
+                    <div id="campo1">
+                        <div id="label">4. Campo deshabilitado</div>
+                        <input id="deshabilitado" disabled value="valor deshabilitado">
+                    </div>
+                    <div id="campo1">
+                        <div id="label">5. Fecha y hora</div>
+                        <input type="date" id="birthdaytime" name="birthdaytime">
+                    </div>
+                    <div id="campo1">
+                        <div id="label">6. DNI</div>
+                        <input id="dni">
+                    </div>
+                    <div id="campo1">
+                        7. Actividades extracurriculares<br>
+                        <input type="checkbox" id="musica">Música<br>
+                        <input type="checkbox" id="pintura">Pintura<br>
+                        <input type="checkbox" id="deportes">Deportes<br>
+                        <input type="checkbox" id="teatro">Teatro<br>
+                    </div>
+                    <div id="campo1">
+                        <div id="label">8. Sexo</div>
+                        <input type="radio" id="masc" name="sexo" checked>Femenino<br>
+                        <input type="radio" id="fem" name="sexo">Masculino<br>
+                    </div>
+                    <div id="campo1">
+                        <h2>9. Vacío</h2>
+                    </div>
+                    <div id="campo1">
+                        <div id="label">10. Estudios cursados</div>
+                        <select name="estudios" id="estudios">
+                            <option value="primario" selected>Primario</option>
+                            <option value="secundario">Secundario</option>
+                            <option value="terciario">Terciario</option>
+                            <option value="universitario">Universitario</option>
+                        </select>
+                    </div>
+                    <div id="campo1">
+                        <div id="label">11. Area de desempeño</div>
+                        <select name="area" id="area">
+                            <option value="administracion" selected>Administración</option>
+                            <option value="ingenieria">Ingeniería</option>
+                            <option value="sistemas">Sistemas</option>
+                            <option value="direccion">Dirección</option>
+                        </select>
+                    </div>
+                    <div id="campo1">
+                        <div id="label">12. Turno</div>
+                        <select name="turno" id="turno">
+                            <option value="mañana" selected>Mañana</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noche">Noche</option>
+                        </select>
+                    </div>
+                    <div id="campo1">
+                        <div id="label">13. Conduce</div>
+                        <input type="radio" id="si" name="conduce" checked>Sí
+                        <input type="radio" id="no" name="conduce">No
+                    </div>
+                </div>
+                <div id="botones">
+                    <button id="boton" type="submit">
+                        Enviar
+                    </button>
+                    <button id="boton" type="reset">
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div id="pie">
+            Copyright 2020 by <a target="_blank" href="https://github.com/gpani">@gpani</a>.
+        </div>
+
+    </div>
+
+</body>
+
+</html>

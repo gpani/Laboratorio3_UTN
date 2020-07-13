@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+    display: block;
+    overflow: hidden;
+}
+
+.encabezado {
+    height: 10%;
+    background-color: honeydew;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorTabla {
+    height: 80%;
+    margin: auto;
+}
+
+.pie {
+    height: 10%;
+    background-color: honeydew;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    width: 300px;
+    font-size: 30px;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: green;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+thead tr th, tfoot tr td {
+    height: 40px;
+}
+
+thead th {
+    border: 1px solid lightseagreen;
+}
+
+tbody tr{
+    background-color: lightblue;
+    text-align: initial;
+}
+
+tbody tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+tbody {
+    max-height: 85%;
+    height:85%;
+    display:inline-block;
+    overflow:auto;
+}
+
+thead, tfoot, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+    height: 50px;
+}
+
+.boton {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 180px;
+    font-size: 20px;
+}
+
+.controles {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 65%;
+}
+
+
+div.contenedorActivo {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+div.contenedorDesactivado {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+div.ventanaModalApagada{
+    visibility: hidden;
+}
+
+div.ventanaModalActivada{
+    visibility: visible;
+
+    position: absolute;
+
+    left: 12%;
+    top: 12%;
+
+    width: 80%;
+    height: 70%;
+
+    background-color: cornflowerblue;
+
+    display: inline-block;
+}
+
+.encabezadoModal {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.cerrarModal {
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border:none;
+    background-color: aquamarine;
+}
+
+.cerrarModal:hover{
+    background-color: lightcoral;
+}
+
+.contenidoModal {
+    width: 100%;
+    height: 90%;
+    background-color: lightgreen;
+    display: block;
+}
+
+.encabezado {
+    height: 10%;
+    background-color: honeydew;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo {
+    height: 80%;
+    margin: auto;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.pie {
+    height: 10%;
+    background-color: honeydew;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo {
+    height: 33%;
+    width: 50%;
+    float: left;
+}
+
+.longInput {
+    font-size: 30px;
+}
+
+.botonForm {
+    width: 300px;
+    font-size: 30px;
+}

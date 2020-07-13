@@ -1,0 +1,94 @@
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+        <style>
+                .center {
+
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                }
+        </style>
+
+        <img class="center" src="../../contenido/unnamed.jpg" width="450" height="98" />
+
+        
+        <br />
+        <br />
+        <div class="padre">
+
+                
+                        
+                <h1 class="h1Text">Adicionar Persona</h1>
+                <div class="textCenter">
+                        <div>
+                                <label>Nombre</label>
+                                <br>
+                                <input  class="longInput"  type="text" id="nombre" title="complete este campo" />
+                        </div>
+                        
+                        <br />
+                        <div>
+                                <label>Apellido</label>
+                                <br>
+                                <input  class="longInput"  type="text" id="apellido" title="complete este campo"/>
+                        </div>
+                        <br />
+                        <div>
+                                <label>Fecha de nacimiento</label>
+                                <br>
+                                <input  class="longInput"  type="text" id="fecha" title="complete este campo"/>
+                        </div>
+                        <br />
+                        <button class="datPer" id="cargarDatos" title="lista">Cargar Datos </button>
+                        
+                </div>  
+                
+        </div>
+        <br>
+        <br>
+        <div class="padre1">
+
+                        <h1 class="h1Text">Control</h1>
+                        <div class="textCenter">
+                                <button class="lista" id="lisPer" title="lista">Lista de Personas </button>
+                                <button class="oculto" id="oculta" title="oculta">Oculta Presentación</button>
+                                
+                        </div>  
+                
+                        <br />
+        </div>
+        <br>
+        <br>
+        <div class="divTabla" id="resultado"></div>
+       
+
+        <script src="./scriptVOD.js" ></script>
+        <br />
+        <br />
+        <br />
+        <br />
+        <input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+        <br />
+        <br />
+
+        <footer>
+                Gessica Paniagua
+                <br />
+
+                <a href="mailto:gessi.paniagua@gmail.com">gessi.paniagua@gmail.com</a>
+
+                <br />
+
+                <p>Copyright 2020 by <a target="_blank" href="https://github.com/gpani">@gpani</a></p>
+        </footer>
+
+
+</body>
+
+</html>

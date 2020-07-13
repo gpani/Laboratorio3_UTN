@@ -1,0 +1,69 @@
+*{box-sizing: border-box;margin: 0;}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#fondo{
+    background-color: darkcyan;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+div#titulo{
+    padding:1%;
+    height: 10%;
+}
+
+div#pie{
+    padding:1%;
+    height: 10%;
+}
+
+div#cuerpo{
+    height: 80%;
+}
+
+div#nav{
+    width:20%;
+    height: 100%;
+    background-color: aquamarine;
+    float: left;
+    padding-top: 5%;
+    align-content: center;
+    text-align: center;
+    display: block;
+}
+
+
+/* este div va con overflow para que aparezca el scroll  */
+div#main{
+    padding: 1%;
+    height: 100%;
+    background-color: cadetblue;
+    overflow:auto;
+}
+
+div#boton{
+    height: 60px;
+    width: 150px;
+    background-color: lightgray;
+    margin: auto;
+    display: flex;
+        justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+div#boton:hover{
+    background-color: gray;
+    text-decoration: underline;
+}

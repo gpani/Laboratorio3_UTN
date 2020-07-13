@@ -1,0 +1,59 @@
+
+
+.padre {
+    /* IMPORTANTE */
+   
+    background-color: rgb(235, 210, 250);
+    width: 80%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 50px;
+
+    overflow: auto;  
+}
+
+
+.divCenter{
+    text-align: center;
+}
+
+.longInput {
+    font-size: 20px;
+    
+}
+
+.h1Text  {
+    
+    margin-left: 2%;
+}
+
+.claseObjetoDinamico {
+    background-color: rgb(23, 195, 238);
+    border: 2px solid rgb(67, 231, 17);
+    width: 400px;
+    height: 100px;
+
+}
+
+
+.textCenter{
+    text-align: left;
+    margin-left: 2%;
+   
+}
+
+.colorbtn{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #12cbdb;
+    border-radius: 3px;
+    border: 1px solid ;
+}
+

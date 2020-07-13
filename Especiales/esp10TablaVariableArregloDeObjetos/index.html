@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <script src="../jquery.js"></script>
+    <script src="script.js"></script>
+    <div class="encabezado">
+        Articulos
+        <div class="controles">
+            <button class="boton" id="cargarDatos">Cargar Datos</button>
+            <button class="boton" id="limpiar">Limpiar</button>
+        </div>
+    </div>
+    <div class="contenedorTabla">
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th campo-dato="codArt">CodArt</th>
+                    <th campo-dato="familia">Familia</th>
+                    <th campo-dato="um">UM</th>
+                    <th campo-dato="descripcion">Descripción</th>
+                    <th campo-dato="fechaAlta">FechaAlta</th>
+                    <th campo-dato="saldoStock">SaldoStock</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>s CodArt</td>
+                    <td>s Familia</td>
+                    <td>s UM</td>
+                    <td>s Descripción</td>
+                    <td>s FechaAlta</td>
+                    <td>s SaldoStock</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="pie">
+        Pie
+    </div>
+</body>
+
+</html>

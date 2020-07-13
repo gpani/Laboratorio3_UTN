@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <script src="../jquery.js"></script>
+    <script src="script.js"></script>
+    <div class="formulario">
+        <div class="encabezado">
+            Formulario para ALTA - Maestro de Artículos
+        </div>
+        <form class="cuerpo" id="formCampos">
+                <div class="campo">
+                    <br>
+                    <label>Código de artículo:</label>
+                    <br>
+                    <input class="longInput" required type="text" id="codArt" name="codArt"
+                        title="Complete este campo." />
+                </div>
+                <div class="campo">
+                    <br>
+                    <label>Familia de artículo:</label>
+                    <br>
+                    <select class="longInput" name="fliaArticulo" id="fliaArticulo">
+                    </select>
+                </div>
+                <div class="campo">
+                    <br>
+                    <label>Descripción:</label>
+                    <br>
+                    <input class="longInput" required type="text" id="descrip" name="descrip"
+                        title="Complete este campo." />
+                </div>
+                <div class="campo">
+                    <br>
+                    <label>Fecha Alta:</label>
+                    <br>
+                    <input class="longInput" required type="date" id="fechaAlta" name="fechaAlta"
+                        title="Complete este campo." />
+                </div>
+                <div class="campo">
+                    <br>
+                    <label>Saldo stock:</label>
+                    <br>
+                    <input class="longInput" required type="number" id="stock" name="stock"
+                        title="Complete este campo." value="0" />
+                </div>
+            <div class="campo">
+                <br>
+                <button type="button" class="boton" id="btnEnviar">Enviar</button>
+            </div>
+        </form>
+        <div class="pie">
+            Pie del formulario
+        </div>
+    </div>
+</body>
+
+</html>

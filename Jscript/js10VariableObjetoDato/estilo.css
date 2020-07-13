@@ -1,0 +1,82 @@
+
+
+.padre {
+    /* IMPORTANTE */
+   
+    background-color: #e0c5f0;
+    width: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+    
+}
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    font-size: 25px;
+}
+
+.padre1 {
+    /* IMPORTANTE */
+   
+    background-color: #c5f0de;
+    width: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+    
+}
+
+.longInput {
+    font-size: 20px;
+    
+}
+
+.h1Text  {
+    
+    margin-left: 2%;
+}
+
+
+.textCenter{
+    text-align: left;
+    margin-left: 2%;
+   
+}
+
+.lista{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #f04df0;
+    border-radius: 3px;
+    border: 1px solid ;
+}
+
+.datPer{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #8c42ec;
+    border-radius: 3px;
+    border: 1px solid ;
+}
+
+.oculto{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgb(223, 205, 106);
+    border-radius: 3px;
+    border: 1px solid ;
+}

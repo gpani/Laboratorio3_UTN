@@ -1,0 +1,58 @@
+button#promedio{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 3px;
+    border: 1px solid ;
+}
+
+button#suma{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rosybrown;
+    border-radius: 3px;
+    border: 1px solid ;
+}
+
+button#mayor{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgb(161, 188, 143);
+    border-radius: 3px;
+    border: 1px solid ;
+}
+
+.padre {
+    /* IMPORTANTE */
+    text-align: left;
+    background-color: rgb(166, 235, 200);
+    width: auto;
+    padding-left: 50px;
+}
+
+.longInput {
+    font-size: 20px;
+    
+}
+
+.h1Text  {
+    text-align: center;
+}
+
+
+label {
+    display: inline-block;
+    width: 140px;
+  }​

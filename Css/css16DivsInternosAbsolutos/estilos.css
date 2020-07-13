@@ -1,0 +1,53 @@
+html, body {
+    margin:0px;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+div#contenedor{
+    background-color: lightblue;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+div#clase1{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 20%;
+    height: 35%;
+    overflow: auto;
+    font-size: 1vw;
+    z-index: 1;
+    background-color: greenyellow;
+}
+
+div#clase2{
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    width: 40%;
+    height:40%;
+    overflow: auto;
+    font-size: 1vw;
+    z-index: 2;
+    background-color: lightgreen;
+}
+
+div#clase3{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 30%;
+    height: 30%;
+    overflow: auto;
+    font-size: 1vw;
+    z-index: 3;
+    background-color: lightcoral;
+    opacity: 0.75;
+}

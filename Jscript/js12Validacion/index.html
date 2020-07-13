@@ -1,0 +1,76 @@
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+        <style>
+                .center {
+
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                }
+        </style>
+
+        <img class="center" src="../../contenido/unnamed.jpg" width="450" height="98" />
+
+        
+        <br />
+        <br />
+        <h1>Ejercicio validación de un INPUT</h1>
+        <div class="padre">
+                <div class="textCenter">
+                        <form id="formulario">
+                                <div>
+                                        <br>
+                                        <label>Ingrese el dia del mes</label>
+                                        <br>
+                                        <input  class="longInput" required type="number" max="31" min="1" id="dia" name="nombre" title="complete este campo" />
+                                </div>
+                                
+                                <br />
+                                <div>
+                                        <label>Ingrese el mes</label>
+                                        <br>
+                                        <input  class="longInput" required type="number" max="12" min="1" id="mes" name="apellido" title="complete este campo"/>
+                                </div>
+                                <br />
+                                <br />
+                                
+                        </form>
+                        <div class="divCenter">
+                                        <button class="colorbtn" id="blanquear" title="lista">Reset</button>
+                                        <button class="colorbtn" id="enviar" title="lista">Enviar</button>
+                        </div>
+                </div>  
+                
+        </div>
+        <br>
+        <br>
+       
+
+        <script src="./scriptValidacion.js" ></script>
+        <br />
+        <br />
+        <br />
+        <br />
+        <input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+        <br />
+        <br />
+
+        <footer>
+                Gessica Paniagua
+                <br />
+
+                <a href="mailto:gessi.paniagua@gmail.com">gessi.paniagua@gmail.com</a>
+
+                <br />
+
+                <p>Copyright 2020 by <a target="_blank" href="https://github.com/gpani">@gpani</a></p>
+        </footer>
+</body>
+
+</html>

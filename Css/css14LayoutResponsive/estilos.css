@@ -1,0 +1,106 @@
+*{box-sizing: border-box;margin: 0;}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#fondo{
+    background-color: darkcyan;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    align-content: center;
+
+}
+
+div#titulo{
+    padding:1%;
+    height: 10%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div#nav{
+    width:100%;
+    height: 5%;
+    background-color: aquamarine;
+    float: left;
+    align-content: center;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+div#pie{
+    padding:1%;
+    height: 10%;
+}
+
+div#main{
+    width: 100%;
+    height: 75%;
+    background-color: lightsalmon;
+    overflow:auto;
+    display: block;
+    text-align: center;
+}
+
+div#columna{
+    text-align: left;
+    float: left;
+    background-color: silver;
+    font-size: 1em;
+    padding: 1%;
+}
+
+img#imagen{
+    width: 100%;
+}
+
+@media (min-width:900px){
+    div#columna{
+        width: 20%;
+    }
+}
+
+@media (min-width:700px) and (max-width:900px){
+    div#columna{
+        width: 25%;
+    }
+}
+
+@media (min-width:500px) and (max-width:700px){
+    div#columna{
+        width: 33.3%;
+    }
+}
+
+@media (min-width:300px) and (max-width:500px){
+    div#columna{
+        width: 50%;
+    }
+}
+
+div#boton{
+    height: 100%;
+    width: 25%;
+    background-color: aquamarine;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    float: left;
+}
+
+div#boton:hover{
+    background-color: gray;
+    text-decoration: underline;
+}

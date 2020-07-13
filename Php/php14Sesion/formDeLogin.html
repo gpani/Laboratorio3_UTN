@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <!-- formulario comun y corriente que pide user y password 
+        el usuario y password son enviados a ingresoAlSistema.php
+        por metodo POST
+        -->
+        <h1>Login al sistema</h1>
+        <form action="./ingresoAlSistema.php" method="POST">
+            <label>Usuario</label><input type="text" id="usuario" name="usuario" required>
+            <label>Password</label><input type="password" id="password" name="password" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>

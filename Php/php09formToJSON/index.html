@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <script src="../../Especiales/jquery.js"></script>
+    <script src="script.js"></script>
+    <div id="contenedor">
+        <div class="encabezado">
+            Encabezado
+        </div>
+        <div class="contenido">
+            <div class="controles">
+                    <button class="boton" id="abrirModal">Abrir Modal</button>
+            </div>
+        </div>
+        <div class="pie">
+            Pie
+        </div>
+    </div>
+    <div id="ventanaModal">
+        <div class="encabezadoModal">Encabezado modal <button class="cerrarModal" id="cerrarModal"><strong>X</strong></button></div>
+        <div id="contenidoModal">
+            <form class="cuerpo" id="formCampos">
+                <div class="campo">
+                    <label>idUsuario:</label>
+                    <br>
+                    <input class="longInput" required type="text" id="idUsuario" name="idUsuario"
+                        title="Complete este campo." />
+                </div>
+                <div class="campo">
+                    <label>Login:</label>
+                    <br>
+                    <input required class="longInput" name="login" id="login" title="Complete este campo." />
+                </div>
+                <div class="campo">
+                    <label>Apellido:</label>
+                    <br>
+                    <input class="longInput" required type="text" id="apellido" name="apellido"
+                        title="Complete este campo." />
+                </div>
+                <div class="campo">
+                    <label>Nombres:</label>
+                    <br>
+                    <input class="longInput" required type="text" id="nombres" name="nombres"
+                        title="Complete este campo." />
+                </div>
+                <div class="campo">
+                    <label>Fecha de nacimiento:</label>
+                    <br>
+                    <input class="longInput" required type="date" id="fechaNac" name="fechaNac" title="Complete este campo." />
+                </div>
+                <div class="campo">
+                    <button type="button" class="boton" id="btnEnviar">Enviar</button>
+                </div>
+            </form>
+            <div class="pieModal" id="pieModal">
+                Resultado
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

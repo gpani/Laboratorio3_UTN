@@ -1,0 +1,264 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <style>
+    body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+    display: block;
+    overflow: hidden;
+}
+
+.encabezado {
+    height: 10%;
+    background-color: honeydew;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorTabla {
+    height: 80%;
+    margin: auto;
+}
+
+.pie {
+    height: 10%;
+    background-color: honeydew;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cantArt {
+    position: absolute;
+    font-size: 25px;
+    left: 10px;
+}
+
+.boton {
+    width: 300px;
+    font-size: 30px;
+}
+
+.textoPeq {
+    font-size: 20px;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: green;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+thead tr th, tfoot tr td {
+    height: 40px;
+}
+
+thead th {
+    border: 1px solid lightseagreen;
+}
+
+tbody tr{
+    background-color: lightblue;
+    text-align: initial;
+}
+
+tbody tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+tbody {
+    max-height: 85%;
+    height:85%;
+    display:inline-block;
+    overflow:auto;
+}
+
+thead, tfoot, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+    height: 50px;
+}
+
+.boton {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 180px;
+    font-size: 20px;
+}
+
+.controles {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 65%;
+}
+
+th input {
+    width: 100%;
+    height: 100%;
+}
+
+div.contenedorActivo {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+thead {
+    cursor: pointer;
+}
+    </style>
+    <script src="../../Especiales/jquery.js"></script>
+    <div id="contenedor">
+        <div class="encabezado">
+            Articulos
+            <div class="controles">
+                <label class="textoPeq">Orden:</label><br><input readonly value="saldoStock" id="orden">
+                <button class="boton" id="cargarDatos">Cargar Datos</button>
+                <button class="boton" id="limpiar">Limpiar</button>
+            </div>
+        </div>
+        <div class="contenedorTabla">
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th campo-dato="codArt" id="codArt">CodArt</th>
+                        <th campo-dato="familia" id="familia">Familia</th>
+                        <th campo-dato="um" id="um">UM</th>
+                        <th campo-dato="descripcion" id="descripcion">Descripción</th>
+                        <th campo-dato="fechaAlta" id="fechaAlta">FechaAlta</th>
+                        <th campo-dato="saldoStock" id="saldoStock">SaldoStock</th>
+                    </tr>
+                    <tr>
+                        <th campo-dato="codArt"><input id="fCodArt"></th>
+                        <th campo-dato="familia"><input id="fFamilia"></th>
+                        <th campo-dato="um"><input id="fUM"></th>
+                        <th campo-dato="descripcion"><input id="fDescripcion"></th>
+                        <th campo-dato="fechaAlta"><input id="fFechaAlta"></th>
+                        <th campo-dato="saldoStock"></th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>s CodArt</td>
+                        <td>s Familia</td>
+                        <td>s UM</td>
+                        <td>s Descripción</td>
+                        <td>s FechaAlta</td>
+                        <td>s SaldoStock</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="pie">
+            <div id="cantArt" class="cantArt"></div>
+            Pie
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            function limpiarTabla(){
+                $('#cuerpoTabla').empty();
+                $('#cantArt').empty();
+            }
+
+            function cargarTabla() {
+                var tabla = $('#cuerpoTabla');
+                tabla.html('<h3>Esperando respuesta...</h3>');
+                $.ajax({
+                    type: 'get',
+                    url: './articulosJSON.php',
+                    data: {
+                        orden: $("#orden").val(), 
+                        fCodArt: $("#fCodArt").val(),
+                        fFamilia: $("#fFamilia").val(),
+                        fUM: $("#fUM").val(),
+                        fDescripcion: $("#fDescripcion").val(),
+                        fFechaAlta: $("#fFechaAlta").val()
+                    },
+                    success: function(art, estado) {
+                        console.log(art);
+                        var data = JSON.parse(art)['data'];
+                        tabla.empty();
+                        tabla = document.getElementById('cuerpoTabla'); 
+                        data.forEach(fila => {
+                            tr = document.createElement('tr'); 
+                            for (key in fila) {
+                                td = document.createElement('td');
+                                td.setAttribute("campo-dato", key);
+                                td.innerHTML = fila[key];
+                                tr.appendChild(td);
+                            }
+                            tabla.appendChild(tr);
+                        });
+                        $('#cantArt').html('<p>Cant. registros: ' + data.length + '</p>');
+                    }
+                });
+            }
+
+            $('#contenedor').attr('class', 'contenedorActivo');
+
+            $("#cargarDatos").click(function () {
+                limpiarTabla();
+                cargarTabla();
+            });
+
+            $('#codArt').click(function () {
+                $("#orden").val('codArt');
+                limpiarTabla();
+                cargarTabla();
+            });
+
+            $('#familia').click(function () {
+                $("#orden").val('familia');
+                limpiarTabla();
+                cargarTabla();
+            });
+
+            $('#um').click(function () {
+                $("#orden").val('um');
+                limpiarTabla();
+                cargarTabla();
+            });
+
+            $('#descripcion').click(function () {
+                $("#orden").val('descripcion');
+                limpiarTabla();
+                cargarTabla();
+            });
+
+            $('#fechaAlta').click(function () {
+                $("#orden").val('fechaAlta');
+                limpiarTabla();
+                cargarTabla();
+            });
+
+            $('#saldoStock').click(function () {
+                $("#orden").val('saldoStock');
+                limpiarTabla();
+                cargarTabla();
+            });
+
+            $("#limpiar").click(limpiarTabla);
+        });
+    </script>
+</body>
+
+</html>

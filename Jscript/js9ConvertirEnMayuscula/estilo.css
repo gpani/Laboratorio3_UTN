@@ -1,0 +1,27 @@
+
+
+.padre {
+    /* IMPORTANTE */
+   
+    background-color: rgb(135, 186, 233);
+    width: 500px;
+    height: 150px;
+    margin: auto;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.longInput {
+    font-size: 20px;
+    
+}
+
+.h1Text  {
+    text-align: center;
+}
+
+
+.textCenter{
+    text-align: left;
+    display: inline-block;
+}

@@ -1,0 +1,71 @@
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+        <style>
+                .center {
+
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                }
+        </style>
+
+        <img class="center" src="../../contenido/unnamed.jpg" width="450" height="98" />
+
+        <br />
+        <h1>Variables Globales</h1>
+        <br />
+        
+        <div class="padre"  >
+                <button id="variableIncorrecta"  title="No utiliza variable global" onClick="variableIncorrecta()"> Inicializacion incorrecta </button>
+                <button id="variableCorrecta" title="Utiliza variable global" onClick="variableCorrecta()"> Inicializacion correcta </button>
+                <button id="muestraVariableGlobal" title="Muestra variable global" onClick="muestraVariableGlobal()">Muestra Variable Global </button>
+        </div>
+        <script>
+                var variable;
+                function variableIncorrecta() {
+                        var variable = prompt('ingrese valor para la variable global');
+                        alert('valor ingresado: ' + variable);
+                        alert('tipo: ' + typeof(variable));
+                };
+
+                function variableCorrecta() {
+                        variable = prompt('ingrese valor para la variable global');
+                        alert('valor ingresado: ' + variable);
+                        alert('tipo: ' + typeof(variable));
+                };
+
+                function muestraVariableGlobal() {
+                        alert('el valor de la variable es : ' + variable);
+                };
+
+        </script>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+        <br />
+        <br />
+
+        <footer>
+                Gessica Paniagua
+                <br />
+
+                <a href="mailto:gessi.paniagua@gmail.com">gessi.paniagua@gmail.com</a>
+
+                <br />
+
+                <p>Copyright 2020 by <a target="_blank" href="https://github.com/gpani">@gpani</a></p>
+        </footer>
+
+
+</body>
+
+</html>

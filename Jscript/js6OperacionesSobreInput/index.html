@@ -1,0 +1,77 @@
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+        <style>
+                .center {
+
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                }
+        </style>
+
+        <img class="center" src="../../contenido/unnamed.jpg" width="450" height="98" />
+
+        <br />
+        <h1>Ingrese un valor y luego presione cualquier boton para ejecutar una funcion </h1>
+        <br />
+        
+        <div class="padre"  >
+                <input class="longInput" type="text" id="x" ></input>
+                <button id="muestraValor"  title="muestra valor" > Muestra Valor </button>
+                <button id="suma1" title="suma1" >Suma1 </button>
+                <button id="elevaAlCuadrado" title="eleva al cuadrado">Eleva al Cuadrado </button>
+                <button id="multiplicax2" title="multiplica" >Multiplica por 2 </button>
+        </div>
+        <script>
+               /* getElementById() es para acceder a un elemento html de la pagina por su ID */
+                document.getElementById("muestraValor").onclick= function() { 
+                       alert(document.getElementById("x").value)
+                }
+
+                document.getElementById("suma1").onclick= function() { 
+                        /* parseInt convierte un string en un entero  */
+                        document.getElementById("x").value = parseInt(document.getElementById("x").value) + 1;
+                }
+
+                document.getElementById("elevaAlCuadrado").onclick= function() { 
+                        document.getElementById("x").value = parseInt(document.getElementById("x").value) *  parseInt(document.getElementById("x").value);
+                }
+
+                document.getElementById("multiplicax2").onclick= function() { 
+                        document.getElementById("x").value = parseInt(document.getElementById("x").value) * 2;
+                }
+
+
+               
+
+        </script>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+        <br />
+        <br />
+
+        <footer>
+                Gessica Paniagua
+                <br />
+
+                <a href="mailto:gessi.paniagua@gmail.com">gessi.paniagua@gmail.com</a>
+
+                <br />
+
+                <p>Copyright 2020 by <a target="_blank" href="https://github.com/gpani">@gpani</a></p>
+        </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+button#muestraValor{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 3px;
+    border: 1px solid ;
+}
+
+button#suma1{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rosybrown;
+    border-radius: 3px;
+    border: 1px solid ;
+}
+
+button#elevaAlCuadrado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgb(161, 188, 143);
+    border-radius: 3px;
+    border: 1px solid ;
+}
+
+button#multiplicax2{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 10%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: royalblue;
+    border-radius: 3px;
+    border: 1px solid ;
+}
+
+.padre {
+    /* IMPORTANTE */
+    text-align: center;
+}
+
+.longInput {
+    font-size: 20px;
+    
+}

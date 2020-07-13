@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    display: block;
+    overflow: hidden;
+}
+
+/* para ver el contenedor  */
+div.contenedorActivo {
+    opacity: 1;  /* sin transparencia */
+    pointer-events: auto; /* eventos de mouse activados */
+}
+
+/* para desactivar el contenedor  */
+div.contenedorDesactivado {
+    opacity: 0.3;  /* con transparencia */
+    pointer-events: none; /* eventos de mouse desactivados */
+}
+
+/* para ocultar el modal, le pongo visibility: hidden  */
+div.ventanaModalApagada{
+    visibility: hidden;
+}
+
+/* para mostar el modal pongo visibility:visible  */
+div.ventanaModalActivada{
+    visibility: visible;
+
+    position: absolute;
+
+    left: 10%;
+    top: 10%;
+
+    width: 80%;
+    height: 70%;
+
+    background-color: lightgreen;
+
+    display: inline-block;
+}
+
+.encabezadoModal {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.cerrarModal {
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border:none;
+    background-color: aquamarine;
+}
+
+.cerrarModal:hover{
+    background-color: lightcoral;
+}
+
+.contenidoModal {
+    width: 100%;
+    height: 90%;
+    background-color: lightgreen;
+    display: block;
+}
+
+.encabezado {
+    height: 10%;
+    background-color: honeydew;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo {
+    height: 80%;
+    margin: auto;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.pie {
+    height: 10%;
+    background-color: honeydew;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo {
+    height: 33%;
+    width: 50%;
+    float: left;
+}
+
+.longInput {
+    font-size: 30px;
+}
+
+.boton {
+    width: 300px;
+    font-size: 30px;
+}
